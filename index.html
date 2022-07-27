@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+    <title>PHONIE</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h2>make some magic here!!</h2>
+    <main class="container">
+
+        <h1 class="form-head">SUBSCRIPTION FORM</h1>
+        <form action="" method="post" class="form">
+
+            <div class="form-group">
+
+
+                <label for="first_name" class="form-group-label">First name</label>
+                <input type="text" name="first_name" id="first_name" class="first_name" placeholder="First name" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name" class="form-group-label">Last name</label>
+                <input type="text" name="last_name" id="last_name" class="last_name" placeholder="Last name" required/>
+            </div>
+          <div class="logo"> <img id="logo"> </div>
+            <form action="">
+                 <label for="country_code"></label>
+                <input type="text" id="carrier_code" name="country_code" pattern="[A-Za-z]{3}" title="type phone number" required>
+
+            </form>
+          <button type="reset" value="reset">RESET</button>
+          <button type="submit" value="submit">SUBMIT</button>
+            
+
+
+
+        </form>
+
+
+    </main>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
