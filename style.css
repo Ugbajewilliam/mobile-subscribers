@@ -1,26 +1,31 @@
 :root {
     --custom-color: black;
     --padding: 20px;
-    --medium-font-size: 1em;
+    --medium-font-size: 1.2em;
     --big-font-size: 2.5em;
-    --border-radius: 8px;
-    --input-padding: 10px 25px;
-    --margin-bottom: 10px;
+    --border-radius: 5px;
+    --input-padding: 10px 20px;
+    --margin-bottom: 20px;
     --border: 1px solid black;
-    --margin-top: 10px;
+    --margin-top: 100px;
 }
-
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: white;
 }
-
+ */
 body {
     font-size: 15px;
-    font-family: cursive;
-}
+    background:url('./bkgd\ img/image.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin:0;
+    height: 500px;
+    position: relative;
+} 
 
 .container {
     width: 1200px;
@@ -36,7 +41,8 @@ body {
 
 .form-head {
     text-align: center;
-    color: var(--custom-color);
+    color: #f6eff1;
+    margin-bottom: 10px;
 }
 
 .form-group {
@@ -46,13 +52,14 @@ body {
 }
 
 .form-group-label {
-    color: black;
+    color: #f6eff1;
     font-size: var(--medium-font-size);
     margin-bottom: var(--margin-bottom);
+    margin-top: 40px;
 }
 
 button {
-    color: black;
+    color:black;
     margin-top: var(--margin-top);
     padding: var(--padding);
     border-radius: var(--border-radius);
@@ -60,11 +67,19 @@ button {
     cursor: pointer;
     font-size: var(--medium-font-size);
     transition: 0.3s;
+    background-color:#c44a6d;
+    
+}
+.btn{
+  margin: -100px;
+  margin-left:240px;
+  margin-top: 45px;
+  padding: 20px;
 }
 
 button:hover {
     background: black;
-    color: white;
+    color: eb0f5c;
 }
 
 input {
@@ -89,16 +104,25 @@ select {
     padding: var(--input-padding);
     border-radius: var(--border-radius);
     border: var(--border);
-    color: grey;
+    color: #616161;
 }
 
 
 .logo {
     width: 25px;
     height: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .logo img {
     height: 100%;
     width: 100%;
+    position: right;
+}
+u{
+  color: #ca5367;
+}
+p{
+  color: whitesmoke;
 }
