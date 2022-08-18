@@ -12,13 +12,16 @@ function startApp() {
 
   function reset() {
     carrierCode.value = "";
+    logo.style.visibility = "hidden";
   }
   resetButton.addEventListener("click", reset);
 
-  carrierCode.addEventListener("change", function (event) {
-    if (event.target.value.length == 11) {
+  carrierCode.addEventListener("input", function(event) {
+    if (event.target.value.length > 0 && event.target.value.length == 11 && event.target.value.length !== 0) {
       let theValue = event.target.value.toString();
       let newValue = theValue.slice(0, 4);
+      logo.style.display = "block"
+      logo.style.visibility = "visible"
       if (
         newValue == "0803" ||
         newValue == "0806" ||
@@ -33,10 +36,9 @@ function startApp() {
         newValue == "0913"
       ) {
         logo.setAttribute("src", "MTNLOGO.png");
-        return;
       }
 
-      if (
+      else if (
         newValue == "0802" ||
         newValue == "0812" ||
         newValue == "0808" ||
@@ -48,9 +50,8 @@ function startApp() {
         newValue == "0902"
       ) {
         logo.setAttribute("src", "Airtel.png");
-        return;
       }
-      if (
+      else if (
         newValue == "0805" ||
         newValue == "0807" ||
         newValue == "0811" ||
@@ -60,9 +61,8 @@ function startApp() {
         newValue == "0705"
       ) {
         logo.setAttribute("src", "Glo.webp");
-        return;
       }
-      if (
+      else if (
         newValue == "0809" ||
         newValue == "0909" ||
         newValue == "0817" ||
@@ -70,8 +70,13 @@ function startApp() {
         newValue == "0908"
       ) {
         logo.setAttribute("src", "9mobile.jpeg");
-        return;
       }
+      else {
+        logo.style.visibility = "hidden"
+      }
+    }
+    else if (event.target.value.length <= 0) {
+      logo.style.visibility = "hidden"
     }
   });
 }
