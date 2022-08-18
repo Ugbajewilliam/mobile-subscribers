@@ -16,9 +16,16 @@ function startApp() {
   }
   resetButton.addEventListener('click', reset)
 
+  // carrierCode.onchange = function (e) {
+  //   console.log(e.target.value)
+  // }
+
 
   carrierCode.addEventListener('change', function(event) {
-    if (event.target.value.length == 11) {
+    if (event.target.value.length == 11 ) {
+   
+    console.log(event.target.value)
+    
       let theValue = event.target.value.toString()
       let newValue = theValue.slice(0, 4)
       if (newValue == "0803" ||
