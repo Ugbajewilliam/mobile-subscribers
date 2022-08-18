@@ -16,33 +16,34 @@
     <h1 class="form-head">Sign Up For Our Newsletter</h1>
     <form action="" method="post" class="form">
 
-        <div class="form-group">
-          <i class="fa fa-user icon"></i>
-          <label for="first_name" class="form-group-label"> Name</label>
-          <input type="text" name="first_name" id="first_name" class="first_name" placeholder="Name" required />
-        </div>
+      <div class="form-group">
+        <i class="fa fa-user icon"></i>
+        <label for="first_name" class="form-group-label"> Name</label>
+        <input type="text" name="first_name" id="first_name" class="first_name" placeholder="Name" required />
+      </div>
 
-        <div class="form-group"> <span class="icon"><i class="fa-duotone fa-envelope"></i></span>
-          <label for="e-mail" class="form-group-label">E-mail</label>
-          <input type="text" name="e-mail" id="e-mail" class="e-mail" placeholder="E-mail" required />
-        </div>
+      <div class="form-group"> <span class="icon"><i class="fa-duotone fa-envelope"></i></span>
+        <label for="e-mail" class="form-group-label">E-mail</label>
+        <input type="text" name="e-mail" id="e-mail" class="e-mail" placeholder="E-mail" required />
+      </div>
 
-        <div class="logo"> <img id="logo"> </div>
-        <div class="form-group">
-          <form action="">
-            <label for="country_code"></label>
-            <input type="number" id="carrier_code" name="country_code" pattern="[A-Za-z]{3}" title="type phone number"
-              placeholder="Phone number" required />
-          </form>
-          <p>By clicking SUBMIT, you agree on our <u> <code>Privacy Policy for GoMak's Confectionary </code></u> </p>
-        </div>
-      <button type="reset" id="reset" value="reset" class="btn">RESET</button>
-      <button type="submit" value="submit" class="btn">SUBMIT</button>
+      <div class="logo"> <img id="logo"> </div>
+      <div class="form-group">
+        <form action="">
+          <label for="country_code"></label>
+          <input type="number" id="carrier_code" name="country_code" pattern="^[+0-9]+$" title="Type your phone number"
+            placeholder="Phone number" required />
+        </form>
+        <p>By clicking SUBMIT, you agree on our <u> <code>Privacy Policy for GoMak's Confectionary </code></u> </p>
+      </div>
+      <div class="btns">
+        <button type="reset" id="reset" value="reset" class="btn">RESET</button>
+      </div>
     </form>
   </main>
 
   <!-- // ============= EEND DO NOT EDIT ============== // -->
-  <!-- <script src="index.mjs" type="module"></script> -->
+  <script src="index.mjs" type="module"></script>
   <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
 
