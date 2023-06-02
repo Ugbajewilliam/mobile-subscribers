@@ -10,6 +10,8 @@ function startApp() {
   const logo = document.getElementById("logo");
   const resetButton = document.getElementById("reset");
 
+  
+
   function reset() {
     carrierCode.value = "";
     logo.style.visibility = "hidden";
